@@ -48,7 +48,7 @@ from collections import Counter
 #                outstr += word
 #                outstr += " "
 #    return outstr
-text = open('E:\Python\word_cloud\词云.txt','r')
+text = open('word_cloud\词云.txt', 'r')
 content = text.read()
 word = jieba.cut(content)  #此处可以增加一个去掉停用词的 
 
@@ -56,7 +56,7 @@ word_count = Counter(word)
 
 mask = np.array(Image.open('alice_color.png'))
 
-wc = wordcloud.WordCloud(background_color="white",font_path=r'C:\Users\Sakura\AppData\Local\Microsoft\Windows\Fonts\HanYi.ttf',
+wc = wordcloud.WordCloud(background_color="white", font_path=r'C:\Users\Sakura\AppData\Local\Microsoft\Windows\Fonts\HanYi.ttf',
                          mask = mask, 
                          max_words=2000,
                          max_font_size=80)

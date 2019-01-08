@@ -17,8 +17,8 @@ def doc2pdf(input_file, is_doc=False):
 
 if __name__ == "__main__":
     doc_files = []
-    directory = "C:\\Users\\xkw\\Desktop\\destData"
-    # directory = r"E:\Learn\已学完\2.1.Fundamental of microelectronic\助教生涯\homework\HW12\homework\new_part"
+    # directory = "C:\\Users\\xkw\\Desktop\\destData"
+    directory = "E:\\Learn\\已学完\\2.1.Fundamental of microelectronic\\助教生涯\\homework\\Quiz3"
     for root, dirs, filenames in walk(directory):
         for file in filenames:
             if file.endswith(".docx"):
